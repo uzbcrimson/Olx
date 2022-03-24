@@ -1,0 +1,623 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #002F34;
+    height: 76px;
+}
+
+header > div {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo_div span{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 15px;
+}   
+
+.logo_o {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(12px, 15px);
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 12px #24e5db;
+}
+
+.logo_l {
+    width: 10px;
+    height: 41px;
+    top: 0;
+    bottom: 0;
+    background: #23e5db;
+    position: absolute;
+    left: 37px;
+}
+
+.logo_x {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(51px, 10px);
+}
+
+.logo_x::before, .logo_x::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 65%;
+        height: 100%;
+        background: #24e5db;
+}
+
+.logo_x::before {
+    transform: skewX(45deg) translate(-50%, 0);
+}
+
+.logo_x::after {
+    transform: skewX(-45deg) translate(-50%, 0);
+}
+
+/* Logo */
+
+.lan_div {
+    margin-left: 390px;
+}
+
+.lan li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 12.5px;
+}
+
+.lan li:nth-child(1) a{
+    color: #F2F4F5;
+}   
+
+.lan li:nth-child(1) a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.lan li:nth-child(2) a{
+    color: #7F9799;
+}
+
+.lan li:nth-child(2) a::before{
+    content: '|';
+    margin-right: 20px;
+}
+
+.sms ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.sms ul li a {
+    color: white;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.svg-sms {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    margin-right: 15px;
+}
+
+.svg-like {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.svg-user {
+    width: 25px;
+    position: relative;
+    top: 6px;
+    margin-right: 15px;
+}
+
+.quest a{
+    color: #002F34;
+    margin-left: 50px;
+    padding: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: white;
+    border: 5px solid transparent;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.quest a:hover {
+    color: white;
+    background-color: #002F34;
+    border: 5px solid #fff;
+}
+
+.gray_div {
+    width: 100%;
+    height: 152px;
+    background-color: #F2F4F5;
+    padding-left: 170px;
+}
+
+.gray_div > div {
+    height: 72px;
+    display: inline-block;
+    border: 1px solid #F2F4F5;
+}
+
+.search1 {
+    width: 543px;
+    position: relative;
+    top: 36px;
+    background-color: white;
+}
+
+.search1 div {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search-icon {
+    width: 25px;
+    position: relative;
+    top: 4px;
+}
+
+.type_search input{
+    width: 400px;
+    font-size: 19px;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.search2 {
+    width: 338px;
+    position: relative;
+    top: 37.5px;
+    left: -4px;
+    background-color: white;
+}
+
+.search2 div {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.geo-icon {
+    width: 20px;
+    position: relative;
+    left: 5px;
+}
+
+.type_geo input{
+    position: relative;
+    top: -5px;
+    left: 10px;
+    width: 250px;
+    font-size: 19px;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.search3 {
+    width: 148px;
+    position: relative;
+    top: 36.5px;
+    left: -8px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search3:hover {
+    background-color: #002F34;
+}
+
+.search3:hover a{
+    color: white;
+}
+
+.search3:hover .search-icon2{
+    fill: white;
+}
+
+.search3 div {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.search3 a {
+    color: black;
+    position: relative;
+    top: -3px;
+    left: 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+}
+
+.search-icon2 {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    width: 25px;
+    transition: 0.3s;
+}
+
+.category {
+    width: 100%;
+    height: 465px;
+    background-color: white;
+}
+
+.category_banner {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.categories {
+    width: 1077px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.categories div {
+    display: inline-flex;
+    width: 75px;
+    margin-left: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.categories > div > div {
+    display: block;
+}
+
+.bg {
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    background-color: #002F34;
+}
+
+.categories a{
+    color: #002F34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px ;
+}
+
+.categories a:hover{
+    color: white;
+    background-color: #002F34;
+}
+
+.bg1{
+   background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/detskiy-mir-36-2x.png);
+   background-size: cover;
+   background-color: #FFCE32; 
+}
+
+.bg2{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/nedvizhimost-1-2x.png);
+    background-size: cover;
+    background-color: #3A77FF; 
+ }
+
+ .bg3{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/transport-3-2x.png);
+    background-size: cover;
+    background-color: #23e5db; 
+ }
+
+ .bg4{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/rabota-6-2x.png);
+    background-size: cover;
+    background-color: #ff5636; 
+ }
+
+ .bg5{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/zhivotnye-35-2x.png);
+    background-size: cover;
+    background-color: #fff6d9; 
+ }
+
+ .bg6{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/dom-i-sad-899-2x.png);
+    background-size: cover;
+    background-color: #ceddff; 
+ }
+
+ .bg7{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/elektronika-37-2x.png);
+    background-size: cover;
+    background-color: #c8f8f6; 
+ }
+
+
+ .bg8{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/uslugi-7-2x.png);
+    background-size: cover;
+    background-color: #ffd6c9; 
+ }
+
+
+ .bg9{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/moda-i-stil-891-2x.png);
+    background-size: cover;
+    background-color: #ffce32 ; 
+ }
+
+
+ .bg10{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/hobbi-otdyh-i-sport-903-2x.png);
+    background-size: cover;
+    background-color: #ceddff; 
+ }
+
+
+ .bg11{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/otdam-darom-1151-2x.png);
+    background-size: cover;
+    background-color: #c8f8f6; 
+ }
+
+
+ .bg12{
+    background-image: url(https://categories.olxcdn.com/assets/categories/olxuz/obmen-barter-1153-2x.png);
+    background-size: cover;
+    background-color: #ffd6c9; 
+ }
+
+ .bg13{
+    background-image: url(https://categories.olxcdn.com/assets/promo/olxuz/ticket-1x.png);
+    background-size: cover;
+    background-color: rgb(255, 246, 217); 
+ }
+
+ .elon{
+     width: 100%;
+     height: 1350px;
+    background-color: #F2F4F5;
+ }
+
+ .static_line{
+     width: 100%;
+     margin-top: -16px;
+     height: 130px;
+     background-color: #002F34;
+     text-align: center;
+ }
+
+ .air_section{
+     position: relative;
+     top: 100px;
+     width: 100%;
+    height: 405px;
+    margin-top: -90px;
+    background-color: #CBF7EE;
+
+ }
+
+ .elon_banner{
+     text-align: center;
+     padding-top: 30px;
+ }
+
+ .elon_banner h2{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 500;
+     font-size: 30px;
+ }
+
+ .grid_elon{
+     width: 1045px;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     gap: 10px;
+     margin-left: 190px;
+     margin-top: 10px; 
+    }
+
+ .grid_elon div{
+     width: 245px;
+    margin-top: 10px;
+     background-color: white;
+     padding: 15px;
+     padding-right: 0px;
+ }
+
+ .grid_elon div a{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 500;
+     font-size: 17px;
+     transition: 0.2s;
+     cursor: pointer;
+ }
+ 
+ .grid_elon div a:hover{
+     background-color: #002F34;
+     color: white;
+ }
+
+ .grid_elon div h3{
+     color: #002F34;
+     font-size: 17px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .img_elon{
+     width: 215px;
+     height: 150px;
+ }
+
+ .static_line div{
+     display: inline-block;
+ }
+
+ .statik_banner h2{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 22px;
+     font-weight: 400;
+     color: white;
+    position: relative;
+    top: -50px;
+ }
+
+ .static_img{
+     position: relative;
+     left: -80px;
+ }
+
+ .static_buttom button{
+     position: relative;
+     top: -50px;
+     left: 90px;
+    color: #002F34;
+    margin-left: 50px;
+    padding: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: white;
+    border: 5px solid transparent;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.static_buttom button:hover{
+    color: white;
+    background-color: #002F34;
+    border: 5px solid #fff;
+}
+
+.logo_olx{
+    position: relative;
+    top: -10px;
+    padding-top: 80px;
+   text-align: center;
+   background-color: #CBF7EE;
+}
+
+.air_text{
+    text-align: center;
+    width: 820px;
+    margin-left: 280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_end{
+    background-color: #F2F4F5;
+    padding-top: 200px;
+    width: 1430px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+
+.main_end p{
+    width: 1030px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    padding: 50px;
+    background-color: #F2F4F5;
+    width: 100%;
+}
+
+footer div {
+    display: inline-flex;
+}
+
+.footer_one ul li{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+ 
+.footer_one ul li a {
+    color: #002F34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer {
+    padding: 50px;
+    background-color: #F2F4F5;
+    width: 100%;
+}
+
+footer div {
+    display: inline-flex;
+}
+
+.footer_two ul li{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+ 
+.footer_two ul li a {
+    color: #002F34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.footer_tri img{
+    margin-top: 40px;
+}
+
+.footer_tri ul li{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.footer_tri p{
+    width: 300px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+    
+
+
+ 
